@@ -18,13 +18,19 @@ const Currency = (props) => {
       <span>Currency </span>
       <select
         value={selectedCurrency}
-        className="custom-select"
-        id="inputGroupSelect01"
+        className="selectpicker"
+        id="inputGroupSelect02"
         onChange={(event) => {
           changeCurrency(event.target.value);
         }}
+        // style={{ backgroundColor: "lightgreen" }}
       >
-        <option value="$" name="marketing">
+        <option
+          value="$"
+          name="marketing"
+          style={{ backgroundColor: "lightgreen !important" }}
+          class="greenColor"
+        >
           $ Dollar
         </option>
         <option value="£" name="sales">

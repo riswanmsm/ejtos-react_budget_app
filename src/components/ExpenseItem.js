@@ -45,7 +45,7 @@ const ExpenseItem = (props) => {
       </td>
       <td>
         <button
-          className="btn btn-success"
+          className="btn btn-success rounded-circle"
           onClick={() => increaseAllocation(props.name)}
         >
           +
@@ -53,7 +53,7 @@ const ExpenseItem = (props) => {
       </td>
       <td>
         <button
-          className="btn btn-danger"
+          className="btn btn-danger rounded-circle"
           onClick={() => decreaseAllocation(props.name)}
         >
           -
